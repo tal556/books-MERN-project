@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
-
+// "mongodb://127.0.0.1:27017/library"
 const  constDBconcotionString = process.env.DB;
 mongoose
-    .connect( "mongodb://127.0.0.1:27017/library", { useNewUrlParser: true, useUnifiedTopology: true  })
+    .connect( constDBconcotionString, { useNewUrlParser: true, useUnifiedTopology: true  })
     .catch(e => {
         console.error('Connection error', e.message)
     })
