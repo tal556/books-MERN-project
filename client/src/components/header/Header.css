@@ -1,0 +1,69 @@
+
+
+.burger { grid-area: burger; }
+.LinkList { grid-area: link; }
+.avatar { grid-area: avatar; }
+.mainHeader{
+    width: 100vw;
+    background-color: rgb(43, 91, 224);
+    height: 2.5rem;
+    display: grid;
+    grid-template-areas:
+    'burger link link link avatar'
+    ;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.LinkList{
+    /* width: 60%; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.burger{
+    /* position: relative;
+    right: 6rem; */
+    cursor: pointer;
+    color: white;
+}
+.avatar{
+    /* position: relative;
+    left: 6rem; */
+    cursor: pointer;
+    color: white;
+}
+.Link{
+    color: #fff;
+}
+.Link:hover{
+    color: #333;
+    font-weight: 600;
+}
+.avatar:hover{
+    color: #333;
+}
+.burger:hover{
+    color: #333;
+}
+@media screen and (max-width: 1250px) {
+    /* .menuIconDiv{
+        width: 30%;
+        justify-content:flex-start;
+        
+    }
+    .avatarDiv{
+        width: 30%;
+    }
+    
+    .LinkList{
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        
+    } */
+
+}
