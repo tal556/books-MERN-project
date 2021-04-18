@@ -1,10 +1,20 @@
-import React from 'react'
-import './BooksList.css'
+import React from "react";
+import "./BooksList.css";
+import TableCom from "../../components/table/TableComponent";
+import {getAllBooks} from '../../services/bookService'
 
 export default function BooksList() {
-    return (
-        <div>
-            yyyyyyyyyyyyyyyyyyyyyyyyy
-        </div>
-    )
+//   const [books, setBooks] = useState([]);
+//   useEffect(getBooks, []);
+
+//   function getBooks() {
+//     getAllBooks().then((res) => {
+//       setBooks(res);
+//     });
+//   }
+  return (
+    <div>
+      <TableCom />
+    </div>
+  );
 }

@@ -1,6 +1,6 @@
-// let PORT = process.env.PORT || 8080
-// const BASIC_API = `http://localhost:${PORT}/`
-const API = process.env.NODE_ENV === 'production' ? 'https://books-app-mern-update.herokuapp.com/' : 'http://localhost:8080/'
+let PORT = process.env.PORT || 8080
+const BASIC_API = `http://localhost:${PORT}/`
+// const API = process.env.NODE_ENV === 'production' ? 'https://books-app-mern-update.herokuapp.com/' : 'http://localhost:8080/'
 
 async function callMyServer() {
     await fetch(BASIC_API)

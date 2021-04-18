@@ -3,13 +3,14 @@
 .burger { grid-area: burger; }
 .LinkList { grid-area: link; }
 .avatar { grid-area: avatar; }
+.title { grid-area: title; }
 .mainHeader{
     width: 100vw;
     background-color: rgb(43, 91, 224);
     height: 2.5rem;
     display: grid;
     grid-template-areas:
-    'burger link link link avatar'
+    'burger title link link link avatar'
     ;
     align-items: center;
     justify-content: space-around;
@@ -35,6 +36,11 @@
     left: 6rem; */
     cursor: pointer;
     color: white;
+}
+.title{
+    color: white;
+    font-weight: 500;
+
 }
 .Link{
     color: #fff;
