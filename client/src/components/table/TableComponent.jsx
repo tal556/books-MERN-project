@@ -10,7 +10,7 @@ export default function TableComponent(props) {
     }
     const options = {
         filterType: "checkbox",
-        onRowsDelete: deleteMovie
+        // onRowsDelete: deleteMovie
     }
 
     return (

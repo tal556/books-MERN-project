@@ -1,16 +1,16 @@
-let PORT = process.env.PORT || 8080
-const BASIC_API = `http://localhost:${PORT}/`
-// const API = process.env.NODE_ENV === 'production' ? 'https://books-app-mern-update.herokuapp.com/' : 'http://localhost:8080/'
+// let PORT = process.env.PORT || 8080
+// const BASIC_API = `http://localhost:${PORT}/`
+const API = process.env.NODE_ENV === 'production' ? 'https://books-app-mern-update.herokuapp.com/' : 'http://localhost:8080/'
 
 async function callMyServer() {
-    await fetch(BASIC_API)
+    await fetch(API)
         .then(res => res.json())
         .catch(err => alert(err))
 }
 
 async function getAllBooks(newBook) {
     try {
-        return await fetch(BASIC_API + "books")
+        return await fetch(API + "books")
             .then(res => { return res.json() })
             .then(res => { return res.data })
             // .then(res => console.log(res))
@@ -22,7 +22,7 @@ async function getAllBooks(newBook) {
 async function postBook(newBook) {
     try {
         return await fetch(
-            BASIC_API + "books",
+            API + "books",
             {
                 method: "POST",
                 body:JSON.stringify(newBook),
