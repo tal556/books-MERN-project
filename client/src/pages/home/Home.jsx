@@ -11,8 +11,6 @@ export default function Home() {
     }
     return (
         <div>
-            
-            
             {books ? React.Children.toArray(books.map((item) => { return  <div><h3>{item.name}</h3> <h3>{item.numberOfPages}</h3></div>})) : ''}
         </div>
     )

@@ -29,6 +29,7 @@ async function postBook(newBook) {
                 headers: { 'Content-Type': 'application/json' }
             })
             .then(res => { return res.json() })
+            .then(result => { return result.data })
     } catch (error) {
         console.log(error);
     }
