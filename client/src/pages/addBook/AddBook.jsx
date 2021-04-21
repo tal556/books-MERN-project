@@ -10,7 +10,7 @@ import BackspaceIcon from "@material-ui/icons/Backspace";
 
 export default function AddBook() {
   const [name, setName] = useState("");
-  const [NumberOfPages, setNumberOfPages] = useState(1);
+  const [numberOfPages, setNumberOfPages] = useState(1);
 
   function updateBooksName(event) {
     setName(event.target.value);
@@ -20,7 +20,7 @@ export default function AddBook() {
   }
   function saveBook(event) {
     event.preventDefault();
-    const bookToSave = { name, NumberOfPages };
+    const bookToSave = { name, numberOfPages };
     postBook(bookToSave).then((res) => {
       alert(`user created successfully!`);
     });
